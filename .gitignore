@@ -1,0 +1,32 @@
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+
+# Temporary files
+*.tmp
+*.log
+
+# Node modules
+node_modules/
+
+# Package files
+*.zip
+*.crx
+*.xpi
+*.pem
+web-ext-artifacts/
+
+# Environment files
+.env
+.env.local
