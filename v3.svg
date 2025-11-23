@@ -1,0 +1,46 @@
+<svg width="256" height="256" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Gradient for the funnel and lightning bolt -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F000FF; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E2DE2; stop-opacity:1" />
+    </linearGradient>
+    <!-- Gradient for the magnifying glass handle -->
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A00E0; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E2DE2; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Icon Group -->
+  <g id="icon-group" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Magnifying Glass -->
+    <g id="magnifying-glass">
+      <!-- Handle -->
+      <path d="M68 68 L85 85" stroke="url(#grad2)" stroke-width="8"/>
+      <!-- Lens (Thicker) -->
+      <circle cx="45" cy="45" r="30" stroke="#0072FF" stroke-width="9"/>
+    </g>
+
+    <!-- Solid Cogwheel -->
+    <g id="cogwheel" transform="translate(45, 45) scale(0.55)">
+      <!-- This path draws the outer teeth and the inner hole in one shape -->
+      <path fill="#00D2FF" d="M27.5,0 l5,8.7 l-10,0 l-5,8.7 l-10,0 l-5,-8.7 l-10,0 l5,-8.7 l-5,-8.7 l10,0 l5,-8.7 l10,0 l5,8.7 l10,0 Z M0,12 a12,12 0 1,0 0,-0.01 Z" />
+    </g>
+
+    <!-- Funnel / Filter -->
+    <g id="filter" transform="translate(75, 20)">
+      <path d="M0 0 H20" stroke="url(#grad1)"/>
+      <path d="M2 8 H15" stroke="url(#grad1)"/>
+      <path d="M4 16 H10" stroke="url(#grad1)"/>
+      <path d="M6 24 H8" stroke="url(#grad1)"/>
+    </g>
+
+    <!-- Lightning Bolt -->
+    <g id="lightning-bolt" transform="translate(78, 50)">
+       <path d="M 5 0 L -5 10 L 2 10 L -2 20 L 8 8 L 1 8 Z" stroke="url(#grad1)" fill="url(#grad1)"/>
+    </g>
+
+  </g>
+</svg>```

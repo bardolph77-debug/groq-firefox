@@ -1,0 +1,51 @@
+<svg width="256" height="256" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Gradient for the funnel and lightning bolt -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F000FF; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E2DE2; stop-opacity:1" />
+    </linearGradient>
+    <!-- Gradient for the magnifying glass handle -->
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A00E0; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E2DE2; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Icon Group -->
+  <g id="icon-group" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Magnifying Glass -->
+    <g id="magnifying-glass">
+      <!-- Handle -->
+      <path d="M68 68 L85 85" stroke="url(#grad2)" stroke-width="8"/>
+      <!-- Lens (Thicker) -->
+      <circle cx="45" cy="45" r="30" stroke="#0072FF" stroke-width="9"/>
+    </g>
+
+    <!-- Mechanical Watch Style Cogwheel -->
+    <g id="cogwheel" transform="translate(45, 45) scale(0.55)" fill="#00D2FF">
+
+      <!-- This single path creates the main body: the outer ring, the spokes, and the inner hole. -->
+      <!-- It works by defining the outer circle, then cutting out the inner circle and the spaces between the spokes. -->
+      <path fill-rule="evenodd" d="M0,28 A28,28,0,1,1,0,-28 A28,28,0,1,1,0,28 Z M0,10 A10,10,0,1,0,0,-10 A10,10,0,1,0,0,10 Z M-5,10 L5,10 L5,23 L-5,23 Z M-22,0 L-12,0 L-16,-10 Z M12,0 L22,0 L16,-10 Z M-12.5,15 L-6,21 L-2,13 Z M6,21 L12.5,15 L2,13 Z" />
+
+      <!-- This path adds 12 teeth to the outside of the main body for a detailed gear look. -->
+      <path d="M0,-32 L3,-30 L-3,-30 Z M15,-27.7 L16.5,-25.9 L13.5,-25.9 Z M27.7,-15 L25.9,-16.5 L25.9,-13.5 Z M32,0 L30,3 L30,-3 Z M27.7,15 L25.9,16.5 L25.9,13.5 Z M15,27.7 L16.5,25.9 L13.5,25.9 Z M0,32 L3,30 L-3,30 Z M-15,27.7 L-16.5,25.9 L-13.5,25.9 Z M-27.7,15 L-25.9,16.5 L-25.9,13.5 Z M-32,0 L-30,3 L-30,-3 Z M-27.7,-15 L-25.9,-16.5 L-25.9,-13.5 Z M-15,-27.7 L-16.5,-25.9 L-13.5,-25.9 Z" />
+    </g>
+
+    <!-- Funnel / Filter -->
+    <g id="filter" transform="translate(75, 20)" stroke-width="3">
+      <path d="M0 0 H20" stroke="url(#grad1)"/>
+      <path d="M2 8 H15" stroke="url(#grad1)"/>
+      <path d="M4 16 H10" stroke="url(#grad1)"/>
+      <path d="M6 24 H8" stroke="url(#grad1)"/>
+    </g>
+
+    <!-- Lightning Bolt -->
+    <g id="lightning-bolt" transform="translate(78, 50)">
+       <path d="M 5 0 L -5 10 L 2 10 L -2 20 L 8 8 L 1 8 Z" fill="url(#grad1)"/>
+    </g>
+
+  </g>
+</svg>```
